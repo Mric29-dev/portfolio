@@ -1,0 +1,27 @@
+.weeding-rings {
+    width: 37px;
+    height: 37px;
+    color: #494848;
+}
+
+.title-separator {
+    border-color: #a6766e
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
+    /*background-color: #e7e7e7;
+    border: 1px solid #cacaca;*/
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    background-color: #c5c5c5d8;
+}
