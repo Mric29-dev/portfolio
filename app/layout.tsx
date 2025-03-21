@@ -4,9 +4,10 @@ import { CursorTracker } from "@/components/cursorTracker/cursorTracker";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar/navbar";
 import UpScrollArrow from "@/components/upScrollArrow/upScrollArrow";
-import { fontMono, fontOswald, fontOverlock, fontSans, fontShippori, fontSpinnaker } from "@/config/fonts";
+import { fontMono, fontOswald, fontOverlock, fontPoppins, fontSans, fontShippori, fontSpinnaker } from "@/config/fonts";
+import { ScrollContext } from "@/lib/scrollContext";
 import clsx from "clsx";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Toaster } from "react-hot-toast";
 import "./styles/global.css";
 
@@ -17,6 +18,7 @@ export const fonts = {
     overlock: fontOverlock.style.fontFamily,
     oswald: fontOswald.style.fontFamily,
     shippori: fontShippori.style.fontFamily,
+    poppins: fontPoppins.style.fontFamily,
 };
 
 export default function RootLayout({
@@ -26,6 +28,15 @@ export default function RootLayout({
 }) {
 
     const scrollContainer = useRef(null);
+    const [ref_state, setRefState] = useState(null);
+
+    useEffect(() => {
+        if (!scrollContainer.current) {
+            return;
+        }
+
+        setRefState(scrollContainer.current)
+    }, []);
 
     return (
         <html lang="fr">
@@ -42,7 +53,9 @@ export default function RootLayout({
                 <CursorTracker />
 
                 <div ref={scrollContainer} className="overflow-auto mb-auto">
-                    {children}
+                    <ScrollContext value={scrollContainer.current}>
+                        {children}
+                    </ScrollContext>
                     <Footer />
                 </div>
 

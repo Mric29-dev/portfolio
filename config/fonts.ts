@@ -1,4 +1,4 @@
-import { Fira_Code as FontMono, Inter as FontSans, Oswald, Overlock, Shippori_Antique, Spinnaker } from "next/font/google";
+import { Fira_Code as FontMono, Inter as FontSans, Oswald, Overlock, Poppins, Shippori_Antique, Spinnaker } from "next/font/google";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -36,4 +36,9 @@ export const fontShippori = Shippori_Antique({
 });
 
 
+export const fontPoppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: "400"
+});
 

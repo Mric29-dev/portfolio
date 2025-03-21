@@ -5,19 +5,19 @@ import { useEffect, useState } from "react";
 /**
  * Arrow used to scroll on top of displayed pages
  */
-function UpScrollArrow(params: { elementToScroll: any }) {
+function UpScrollArrow(props: { elementToScroll: any }) {
 
     const VISIBLE_PERCENT_TRIGGER = 5;// %
 
     const [isVisible, setVisible] = useState(false);
 
     const handleClick = (e: any) => {
-        const elt = params.elementToScroll.current;
+        const elt = props.elementToScroll.current;
         elt.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     useEffect(() => {
-        const elt = params.elementToScroll.current as HTMLElement;
+        const elt = props.elementToScroll.current as HTMLElement;
         const onScroll = () => updateIsVisible();
 
         // Add and remove scroll listener
@@ -28,7 +28,7 @@ function UpScrollArrow(params: { elementToScroll: any }) {
 
     /** Update isVisible state, if scroll value is more than 5%, show upToPage button */
     function updateIsVisible() {
-        const elt = params.elementToScroll.current as HTMLElement | undefined;
+        const elt = props.elementToScroll.current as HTMLElement | undefined;
         if (!elt) { return; }
 
         // Define scroll values

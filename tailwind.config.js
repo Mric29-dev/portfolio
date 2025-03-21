@@ -14,7 +14,8 @@ module.exports = {
         mono: ["var(--font-mono)"],
         spinnaker: ["var(--font-spinnaker)"],
         oswald: ["var(--font-oswald)"],
-        shippori: ["var(--font-shippori)"]
+        shippori: ["var(--font-shippori)"],
+        poppins: ["var(--font-poppins)"]
       },
     },
   },

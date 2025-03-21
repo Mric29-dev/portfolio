@@ -1,11 +1,11 @@
+import { PageTitle } from "@/components/pageTitle/pageTitle";
+
 export default function ServicesPage() {
 
     return (
         <>
-            <div className="bg-white h-full">
-                Services page
-                <br />
-                Ce ci est ma page de services
+            <div className="h-full">
+                <PageTitle title="Mes services" subtitle="Voici mes services" />
             </div>
         </>
     )

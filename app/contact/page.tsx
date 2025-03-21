@@ -1,10 +1,10 @@
+import { PageTitle } from "@/components/pageTitle/pageTitle";
+
 export default function ContactPage() {
 
     return (
         <>
-            Contact page
-            <br />
-            Ce ci est ma page de contact
+            <PageTitle title="Contact page" subtitle="Ce ci est ma page de contact" />
         </>
     )
 }
