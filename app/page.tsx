@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site";
+import clsx from "clsx";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,7 +16,10 @@ export default function Page() {
     return <>
         {
             siteConfig.navItems.map((item) => (
-                <section id={item.href} key={item.href} className="min-h-screen">
+                <section id={item.href} key={item.href} className={clsx(
+                    "min-h-screen",
+                    item.flex ? "flex" : "",
+                )}>
                     {item.page?.()}
                 </section>
             ))

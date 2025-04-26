@@ -1,7 +1,7 @@
 import { PageTitle } from "@/components/pageTitle/pageTitle";
 import SkillList from "@/components/skillList/skillList";
 import Image from "next/image";
-import { backSkillList, designSkillList, frontSkillList } from "./skillList";
+import { backSkillList, frontSkillList, otherSkillList } from "./skillList";
 
 export default function SkillsPage() {
 
@@ -35,12 +35,12 @@ export default function SkillsPage() {
 
             <div className="flex flex-col flex-1">
                 <h1 className="text-lg text-center py-4">
-                    Un exemple des technologies que j'utilises régulièrement
+                    Un exemple des technologies que j'utilise régulièrement
                 </h1>
                 <div className="flex flex-row flex-1 justify-center py-2 gap-8">
                     <SkillList list={frontSkillList} title="Font-end" />
                     <SkillList list={backSkillList} title="Back-end" />
-                    <SkillList list={designSkillList} title="Design" />
+                    <SkillList list={otherSkillList} title="Autre" />
                 </div>
             </div>
             <div className="h-16"></div>

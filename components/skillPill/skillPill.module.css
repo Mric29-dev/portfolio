@@ -1,9 +1,9 @@
 .skill-card-body {
-    img {
+    .skill-card-img {
         transition: 1s ease;
     }
 
-    &:hover img {
+    :hover .skill-card-img {
         transform: rotateY(360deg);
     }
 }

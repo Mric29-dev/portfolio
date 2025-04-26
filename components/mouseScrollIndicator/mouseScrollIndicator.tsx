@@ -50,7 +50,7 @@ export default function MouseScrollIndicator(props: { className: string }) {
 
     return (
         <>
-            <div className={clsx(props.className, isVisible ? "visible" : "invisible", "flex flex-col flex-wrap content-center justify-end h-full pb-4")}>
+            <div className={clsx(props.className, isVisible ? "visible" : "invisible", "flex flex-col flex-wrap content-center justify-end h-full pb-24")}>
                 <div className={classes.mouse} onClick={onMouseClick}>
                     <div className={classes["mouse-icon"]}>
                         <span className={classes["mouse-wheel"]}></span>

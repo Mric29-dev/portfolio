@@ -22,7 +22,7 @@ export const frontSkillList: SkillPillParam[] = [
     },
     {
         title: "Typescript",
-        alt: "Est une extension de JavaScript, il permet aux développeurs de mieux structurer leur code.",
+        alt: "Est une extension de JavaScript, il permet aux développeurs de mieux structurer leur code. C'est le langage que j'utilises le plus au quotidien.",
         experience: 10,
         src: "typescript.png"
     },
@@ -40,31 +40,31 @@ export const frontSkillList: SkillPillParam[] = [
     },
     {
         title: "Angular",
-        alt: "Langage Angular",
+        alt: "Est comme React ou VueJs, un framework permettant de développer des applications web. C'est via Angular que j'ai commencé ma carrière de développeur web.",
         experience: 10,
         src: "angular.png"
     },
     {
         title: "Ionic",
-        alt: "Langage Angular",
-        experience: 10,
+        alt: "Est une librairie permettant de développeur des applications smartphone hybrides, à la fois sur IOS ou Android.",
+        experience: 4,
         src: "ionic.png"
     },
     {
         title: "Tailwind",
-        alt: "Langage Angular",
-        experience: 10,
+        alt: "Librairie de comportement css, permettant de donner un style à une application web",
+        experience: 3,
         src: "tailwind.png"
     },
     {
         title: "Bootstrap",
-        alt: "Langage Angular",
-        experience: 10,
+        alt: "Comme Tailwind, une librairie css permettant de styliser les applications web",
+        experience: 5,
         src: "bootstrap.png"
     },
     {
         title: "SASS",
-        alt: "Langage Angular",
+        alt: "Extension de css, permet de définir des comportements plus complexes pour styliser votre application",
         experience: 10,
         src: "sass.png"
     },
@@ -74,62 +74,56 @@ export const frontSkillList: SkillPillParam[] = [
 export const backSkillList: SkillPillParam[] = [
     {
         title: "Node.js",
-        alt: "Langage Typescript",
+        alt: "Est une plateforme de développement javascript",
         experience: 10,
         src: "nodeJs.png"
     },
     {
         title: "SQL",
-        alt: "Langage Typescript",
-        experience: 10,
+        alt: "Permet de manipuler les données et les systèmes de bases de données relationnelles",
+        experience: 6,
         src: "sql.png"
     },
     {
         title: "NoSQL",
-        alt: "Langage Typescript",
+        alt: "Une autre manière de manipuler les données que le SQL",
         experience: 10,
         src: "nosql.png"
     },
     {
         title: "MongoDb",
-        alt: "Langage Typescript",
+        alt: "Système de gestion de base de données NoSQL",
         experience: 10,
         src: "mongoDb.png"
     },
     {
         title: "Express.js",
-        alt: "Langage Typescript",
+        alt: "Librairie permettant de développer des serveurs en javascript",
         experience: 10,
         src: "express.png"
     },
     {
         title: "GraphQL",
-        alt: "Langage Typescript",
-        experience: 10,
+        alt: "Langage de requête à la base de données",
+        experience: 2,
         src: "graphQL.png"
     },
     {
         title: "AWS",
-        alt: "Langage Angular",
-        experience: 10,
+        alt: "Services Amazon, permet de stocker des données, du CLOUD et bien d'autre technologies web.",
+        experience: 3,
         src: "aws.png"
     },
     {
-        title: "Nginx",
-        alt: "Langage Angular",
-        experience: 10,
-        src: "nginx.png"
-    },
-    {
         title: "Docker",
-        alt: "Langage Angular",
-        experience: 10,
+        alt: "Librairie permettant de packager des applications, permettant de les déployer rapidement et simplement.",
+        experience: 8,
         src: "docker.png"
     },
 ]
 
 
-export const designSkillList: SkillPillParam[] = [
+export const otherSkillList: SkillPillParam[] = [
     {
         title: "Figma",
         alt: "Langage Typescript",

@@ -13,27 +13,32 @@ export const siteConfig = {
     {
       label: "Acceuil",
       href: "/",
-      page: ProfilePage
+      page: ProfilePage,
+      flex: true
     },
     {
       label: "Services",
       href: "services",
-      page: ServicesPage
+      page: ServicesPage,
+      flex: false
     },
     {
       label: "Portfolio",
       href: "portfolio",
-      page: PortfolioPage
+      page: PortfolioPage,
+      flex: false
     },
     {
       label: "Compétences",
       href: "skills",
-      page: SkillsPage
+      page: SkillsPage,
+      flex: false
     },
     {
       label: "Contact",
       href: "contact",
-      page: ContactPage
+      page: ContactPage,
+      flex: false
     }
   ],
   navMenuItems: [

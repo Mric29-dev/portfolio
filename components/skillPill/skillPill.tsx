@@ -12,7 +12,7 @@ export default function SkillPill(props: SkillPillParam) {
                 <div className="flex flex-col px-1 py-2 max-w-sm bg-opacity-20">
                     <div className="text-lg font-bold">{props.title}</div>
                     <div className="text-sm break-words">{props.alt}</div>
-                    <div className="text-xs mt-1">Nombre d'année d'expérience : {props.experience} an{props.experience > 1 ? "s" : ""}</div>
+                    <div className="text-xs mt-1">Nombre d'années d'expérience : <span className="italic">{props.experience} an{props.experience > 1 ? "s" : ""}</span></div>
                 </div>
             }
             showArrow={true}
@@ -25,7 +25,13 @@ export default function SkillPill(props: SkillPillParam) {
             <div className={clsx("cursor-pointer hover:scale-[1.05] select-none", classes["skill-card-body"])}>
                 <Card isBlurred={false} className="w-20 h-20">
                     <CardBody className="flex flex-col items-center justify-start p-1 gap-1 pt-3 relative">
-                        <Image {...props} src={`/assets/skills/${props.src}`} width="32" height="32" className="rounded mh-[32px]"></Image>
+                        <Image
+                            {...props}
+                            src={`/assets/skills/${props.src}`}
+                            width="32"
+                            height="32"
+                            className={clsx("rounded mh-[32px]", classes["skill-card-img"])}
+                        />
 
                         <div className="flex justify-center text-sm absolute bottom-2">
                             {props.title}

@@ -53,9 +53,9 @@ export default function RootLayout({
                 <CursorTracker />
 
                 <div ref={scrollContainer} className="overflow-auto mb-auto">
-                    <ScrollContext value={scrollContainer.current}>
+                    <ScrollContext.Provider value={scrollContainer.current}>
                         {children}
-                    </ScrollContext>
+                    </ScrollContext.Provider>
                     <Footer />
                 </div>
 

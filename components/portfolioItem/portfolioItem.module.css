@@ -1,0 +1,30 @@
+.portfolio-item-card {
+    .plus-item {
+        visibility: hidden;
+        position: absolute;
+        font-weight: bold;
+        font-size: 132px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .item-img {
+        user-select: none;
+    }
+
+    &:hover {
+        .item-img {
+            cursor: pointer;
+        }
+
+        .plus-item {
+            visibility: visible;
+            cursor: pointer;
+        }
+
+        filter: brightness(120%);
+    }
+}
