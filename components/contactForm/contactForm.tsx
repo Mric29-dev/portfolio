@@ -54,7 +54,7 @@ export default function ContactForm() {
                     </div>
                 )}
 
-                <div className="flex flex-col gap-4 w-[24rem]">
+                <div className="flex flex-col gap-4 sm:max-w-[24rem] w-1/2">
 
                     <Input
                         isRequired
@@ -66,23 +66,8 @@ export default function ContactForm() {
                         }}
                         label="Nom"
                         labelPlacement="outside"
-                        name="lastname"
+                        name="name"
                         placeholder="Entrez votre nom"
-                    />
-
-                    <Input
-                        isRequired
-                        errorMessage={({ validationDetails }) => {
-                            if (validationDetails.valueMissing) {
-                                return "Entrez votre prénom";
-                            }
-
-                            return errors.name;
-                        }}
-                        label="Prénom"
-                        labelPlacement="outside"
-                        name="firstname"
-                        placeholder="Entrez votre prénom"
                     />
 
                     <Input
@@ -121,9 +106,9 @@ export default function ContactForm() {
                         <Button className="w-full" color="primary" type="submit">
                             Envoyer
                         </Button>
-                        <Button type="reset" variant="bordered">
+                        {/*<Button type="reset" variant="bordered">
                             Vider
-                        </Button>
+                        </Button>*/}
                     </div>
                 </div>
 

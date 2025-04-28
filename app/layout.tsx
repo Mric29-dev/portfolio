@@ -1,7 +1,6 @@
 "use client";
 
 import { CursorTracker } from "@/components/cursorTracker/cursorTracker";
-import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar/navbar";
 import UpScrollArrow from "@/components/upScrollArrow/upScrollArrow";
 import { fontMono, fontOswald, fontOverlock, fontPoppins, fontSans, fontShippori, fontSpinnaker } from "@/config/fonts";
@@ -10,6 +9,7 @@ import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 import { Toaster } from "react-hot-toast";
 import "./styles/global.css";
+import { Footer } from "@/components/footer";
 
 export const fonts = {
     sans: fontSans.style.fontFamily,

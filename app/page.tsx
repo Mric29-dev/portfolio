@@ -17,7 +17,7 @@ export default function Page() {
         {
             siteConfig.navItems.map((item) => (
                 <section id={item.href} key={item.href} className={clsx(
-                    "min-h-screen",
+                    item.hScreen ? "min-h-screen" : "min-h-[75vh]",
                     item.flex ? "flex" : "",
                 )}>
                     {item.page?.()}

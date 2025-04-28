@@ -9,7 +9,7 @@ export function PageTitle(params: { title: string, subtitle?: string, invert?: b
     return (
         <div className={clsx(params.invert ? "flex-col-reverse" : "flex-col", " flex justify-center items-center w-full pt-6")}>
             {params.subtitle &&
-                <div className="text-slate-400 text-sm font-medium tracking-wide pointer-events-none mb-2">
+                <div className="text-slate-400 text-sm font-medium tracking-wide pointer-events-none mb-2 text-center">
                     {params.subtitle}
                 </div>
             }

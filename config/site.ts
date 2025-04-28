@@ -1,3 +1,4 @@
+import AboutPage from "@/app/about/page";
 import ContactPage from "@/app/contact/page";
 import PortfolioPage from "@/app/portfolio/page";
 import ProfilePage from "@/app/profile/page";
@@ -14,7 +15,14 @@ export const siteConfig = {
       label: "Acceuil",
       href: "/",
       page: ProfilePage,
-      flex: true
+      flex: true,
+      hScreen: true
+    },
+    {
+      label: "A propos",
+      href: "about",
+      page: AboutPage,
+      flex: false
     },
     {
       label: "Services",

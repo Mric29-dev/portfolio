@@ -3,7 +3,7 @@
 export const porfolioItemList: PorfolioItemConfig[] = [
     {
         title: "Logiciels de combat",
-        description: "Développement de logiciels et systèmes de combat pour la Marine Nationale",
+        description: "Développement de logiciels et systèmes de combat pour la Marine Nationale.",
         technos: [
             "JAVA",
             "JAVA X",
@@ -11,12 +11,11 @@ export const porfolioItemList: PorfolioItemConfig[] = [
             "Jenkins"
         ],
         projectDescription: "Projet réalisé en JAVA",
-        projectLink: "https://www.google.com",
         src: "battlefieldDev"
     },
     {
         title: "ISS tracker",
-        description: "Application pour smartphone de suivi de l'ISS, suivi des dernières images prises par la NASA.",
+        description: "Application pour smartphone de suivi de l'ISS. Suivi des dernières images publiés par la NASA, tracking de l'ISS en temps réel, notifications lors du passage de l'ISS à proximité de l'utilisateur.",
         technos: [
             "Angular",
             "Ionic",
@@ -40,7 +39,8 @@ export const porfolioItemList: PorfolioItemConfig[] = [
             "Javascript",
             "Docker"
         ],
-        projectDescription: "Mon site personnel, développé avec React/NextJs",
+        projectDescription: "Mon site personnel, principalement développé avec React/NextJs",
+        projectLink: "https://github.com/Mric29-dev/portfolio",
         src: "portoflio"
     }
 

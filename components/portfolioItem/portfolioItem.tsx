@@ -12,10 +12,6 @@ export function PortfolioItem({ item }: { item: PorfolioItemConfig }) {
 
     const assetPrefix = "/assets/projects/";
 
-    function onPlusClick(item: PorfolioItemConfig) {
-        console.log('click on', item)
-    }
-
     return (
         <Card className={clsx(classes["portfolio-item-card"], "flex gap-1 w-[300px]")}>
             <CardBody className="flex flex-col items-center justify-start p-0 max-h-[200px]">
@@ -32,6 +28,7 @@ export function PortfolioItem({ item }: { item: PorfolioItemConfig }) {
                                 "min-w-[300px]"
                             ],
                         }}
+                        placement="bottom"
                     >
                         <PopoverTrigger>
                             <div className="relative flex flex-col">
@@ -41,7 +38,6 @@ export function PortfolioItem({ item }: { item: PorfolioItemConfig }) {
                                     width="300"
                                     height="200"
                                     className={clsx(classes["item-img"], "object-cover rounded-sm")}
-                                    onClick={() => onPlusClick(item)}
                                 />
                                 <div className={classes["plus-item"]}>
                                     +
