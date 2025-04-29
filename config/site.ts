@@ -24,12 +24,12 @@ export const siteConfig = {
       page: AboutPage,
       flex: false
     },
-    {
+    /*{
       label: "Services",
       href: "services",
       page: ServicesPage,
       flex: false
-    },
+    },*/
     {
       label: "Portfolio",
       href: "portfolio",

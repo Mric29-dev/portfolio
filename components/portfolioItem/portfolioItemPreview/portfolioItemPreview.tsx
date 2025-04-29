@@ -8,7 +8,7 @@ import { ExternalLinkIcon } from "lucide-react";
 export function PortfolioItemPreview({ item }: { item: PorfolioItemConfig }) {
 
     return (
-        <div className="px-1 py-2 w-full flex flex-col">
+        <div className="px-1 py-2 w-full flex flex-col max-w-[400px]">
             <div className="text-base font-bold">{item.title}</div>
             <div className="text-xs my-2">{item.projectDescription}</div>
             <div className="text-sm mt-4 pb-1">Technologies du projet :</div>

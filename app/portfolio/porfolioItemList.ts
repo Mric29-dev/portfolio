@@ -15,7 +15,7 @@ export const porfolioItemList: PorfolioItemConfig[] = [
     },
     {
         title: "ISS tracker",
-        description: "Application pour smartphone de suivi de l'ISS. Suivi des dernières images publiés par la NASA, tracking de l'ISS en temps réel, notifications lors du passage de l'ISS à proximité de l'utilisateur.",
+        description: "Application pour smartphone de suivi de l'ISS.",
         technos: [
             "Angular",
             "Ionic",
@@ -23,7 +23,7 @@ export const porfolioItemList: PorfolioItemConfig[] = [
             "CSS",
             "NodeJs"
         ],
-        projectDescription: "Projet personnel, réalisation d'une application pour téléphone avec Ionic.",
+        projectDescription: "Projet personnel, réalisation d'une application pour téléphone avec Ionic. Suivi des dernières images publiés par la NASA, tracking de l'ISS en temps réel, notifications lors du passage de l'ISS à proximité de l'utilisateur.",
         src: "iss"
     },
     {
@@ -42,6 +42,20 @@ export const porfolioItemList: PorfolioItemConfig[] = [
         projectDescription: "Mon site personnel, principalement développé avec React/NextJs",
         projectLink: "https://github.com/Mric29-dev/portfolio",
         src: "portoflio"
+    },
+    {
+        title: "Logiciels de planning",
+        description: "Multiples logiciels de planification",
+        technos: [
+            "Typescript",
+            "Bootstrap",
+            "HTML",
+            "CSS",
+            "Javascript",
+            "AWS"
+        ],
+        projectDescription: "Développement de plusieurs logiciels de planification, pour des clients nationaux importants.",
+        src: "planning"
     }
 
 ]

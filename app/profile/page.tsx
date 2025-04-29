@@ -11,7 +11,7 @@ export default function ProfilePage() {
             <ParallaxBubbles />
             <div className="flex flex-col px-8 h-100 w-full justify-center content-center -translate-y-20">
 
-                <div className="flex flex-col justify-center items-center py-4">
+                <div className="flex flex-col justify-center text-center items-center py-4">
                     <h3 className={clsx(
                         "title text-2xl text-slate-200 pb-4",
                         fontOswald.className,

@@ -31,7 +31,7 @@ export function PortfolioItem({ item }: { item: PorfolioItemConfig }) {
                         placement="bottom"
                     >
                         <PopoverTrigger>
-                            <div className="relative flex flex-col">
+                            <div className="relative flex flex-col overflow-hidden">
                                 <Image
                                     alt=""
                                     src={`${assetPrefix}${item.src}.png`}
