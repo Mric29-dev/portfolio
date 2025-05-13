@@ -15,10 +15,11 @@ export default function SkillsPage() {
                         alt="Illustration d'un ordinateur"
                         width={300}
                         height={300}
-                        sizes="(max-width: 768px) 180px, 250px"
+                        sizes="200px"
                         layout="responsive"
                         objectFit="contain"
                         src="/assets/pc-illustration.png"
+                        className="max-w-[200px]"
                     />
                 </div>
                 <div className="flex flex-1 basis-2/3 justify-center items-center max-w-3xl md:ps-12 pt-6">

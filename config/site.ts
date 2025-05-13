@@ -3,7 +3,6 @@ import ContactPage from "@/app/contact/page";
 import PortfolioPage from "@/app/portfolio/page";
 import ProfilePage from "@/app/profile/page";
 import SkillsPage from "@/app/skills/page";
-import ServicesPage from "../app/services/page";
 
 export type SiteConfig = typeof siteConfig;
 
@@ -51,24 +50,41 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
+      label: "Acceuil",
+      href: "/",
+      page: ProfilePage,
+      flex: true,
+      hScreen: true
+    },
+    {
+      label: "A propos",
+      href: "about",
+      page: AboutPage,
+      flex: false
+    },
+    /*{
       label: "Services",
       href: "services",
-      page: ServicesPage
-    },
+      page: ServicesPage,
+      flex: false
+    },*/
     {
       label: "Portfolio",
       href: "portfolio",
-      page: PortfolioPage
+      page: PortfolioPage,
+      flex: false
     },
     {
       label: "Compétences",
       href: "skills",
-      page: SkillsPage
+      page: SkillsPage,
+      flex: false
     },
     {
       label: "Contact",
       href: "contact",
-      page: ContactPage
+      page: ContactPage,
+      flex: false
     }
   ],
   links: {},
